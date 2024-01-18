@@ -101,6 +101,11 @@
                 </Grid>
             </ControlTemplate>
         </Setter>
+        <Setter Property="ItemsPanel">
+            <ItemsPanelTemplate>
+                <StackPanel Orientation="Horizontal"></StackPanel>
+            </ItemsPanelTemplate>
+        </Setter>
             
         <Style Selector="^ /template/ Path#PART_Arc">
             <Setter Property="Data" Value="{StaticResource ArcData}" />
