@@ -24,7 +24,7 @@
                 </ControlTemplate>
             </Setter>
             <Style Selector="^ /template/ Viewbox#PART_IconArea">
-                <Setter Property="Margin" Value="30,0,0,0"></Setter>
+                <Setter Property="Margin" Value="25,0,0,0"></Setter>
                 <Setter Property="Transitions">
                     <Transitions>
                         <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
@@ -48,7 +48,7 @@
                 <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="FontSize" Value="14"/>
                 <Setter Property="Foreground" Value="#00000000"/>
-                <Setter Property="Margin" Value="15 60 0 0"/>
+                <Setter Property="Margin" Value="5 60 0 0"/>
                 <Setter Property="Transitions">
                     <Transitions>
                         <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
@@ -61,10 +61,10 @@
                     <Setter Property="Fill" Value="#333333"></Setter>
                 </Style>
                 <Style Selector="^ /template/  Viewbox#PART_IconArea">
-                    <Setter Property="Margin" Value="30,-50,0,0"/>
+                    <Setter Property="Margin" Value="25,-50,0,0"/>
                 </Style>
                 <Style Selector="^ /template/  TextBlock#PART_Name">
-                    <Setter Property="Margin" Value="15,45,0,0"/>
+                    <Setter Property="Margin" Value="5,45,0,0"/>
                     <Setter Property="Foreground" Value="#333333"></Setter>
                 </Style>
             </Style>
@@ -79,23 +79,7 @@
             <ListBoxItem Content="Instagram" Tag="{StaticResource Instagram}"/>
         </controls:MagicBar>
     </Design.PreviewWith>
-    
-    <Style Selector="Path.Arc">
-        <Setter Property="Data" Value="{StaticResource ArcData}" />
-        <Setter Property="Width" Value="100"/>
-        <Setter Property="Height" Value="100"/>
-        <Setter Property="Fill" Value="#222222"/>
-        <Setter Property="Margin" Value="-10 90 -10 -1"/>
-    </Style>
-    <Style Selector="Grid.Circle">
-        <Setter Property="Width" Value="80"/>
-        <Setter Property="Height" Value="80"/>
-    </Style>
-    <Style Selector="Border.Bar">
-        <Setter Property="Background" Value="#DDDDDD"/>
-        <Setter Property="Margin" Value="0 40 0 0"/>
-        <Setter Property="CornerRadius" Value="10"/>
-    </Style>
+
     <Style Selector="controls|MagicBar">
         <Setter Property="ItemContainerTheme" Value="{StaticResource MagicBarItem}"/>
         <Setter Property="UseLayoutRounding" Value="True"/>
@@ -105,10 +89,10 @@
         <Setter Property="Template">
             <ControlTemplate>
                 <Grid Background="{TemplateBinding Background}" HorizontalAlignment="Center">
-                    <Border Classes="Bar" />
+                    <Border x:Name="PART_Bar" />
                     <Canvas Margin="20 0 20 0">
-                        <Grid x:Name="PART_Circle" Classes="Circle">
-                            <Path Classes="Arc"/>
+                        <Grid x:Name="PART_Circle">
+                            <Path x:Name="PART_Arc"/>
                             <Ellipse Fill="#222222"/>
                             <Ellipse Fill="CadetBlue" Margin="6"/>
                         </Grid>
@@ -117,5 +101,28 @@
                 </Grid>
             </ControlTemplate>
         </Setter>
+            
+        <Style Selector="^ /template/ Path#PART_Arc">
+            <Setter Property="Data" Value="{StaticResource ArcData}" />
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Fill" Value="#222222"/>
+            <Setter Property="Margin" Value="-10 90 -10 -1"/>
+        </Style>
+        <Style Selector="^ /template/ Grid#PART_Circle">
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Height" Value="80"/>
+            <Setter Property="Canvas.Left" Value="0"/>
+            <Setter Property="Transitions">
+                <Transitions>
+                    <DoubleTransition Property="Canvas.Left" Duration="0:0:0.5"></DoubleTransition>
+                </Transitions>
+            </Setter>
+        </Style>
+        <Style Selector="^ /template/ Border#PART_Bar">
+            <Setter Property="Background" Value="#DDDDDD"/>
+            <Setter Property="Margin" Value="0 40 0 0"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
     </Style>
 </Styles>
