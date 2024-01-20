@@ -39,3 +39,5 @@ dotnet run
 ### Enhanced Version with Page Navigation
 이제 BottomNavigationBar 프로젝트는 페이지 전환 기능을 포함하는 확장된 버전으로 제공됩니다. 이 새로운 버전은 사용자들이 애플리케이션 내에서 효율적으로 내비게이션 할 수 있도록 설계되었습니다. 이를 통해 더욱 직관적이고 매끄러운 사용자 경험을 제공합니다. 페이지 전환 기능을 포함하는 확장된 프로젝트에 대한 자세한 내용은 [여기](https://github.com/lukewire129/AvaloniaNavigationPage)에서 확인하실 수 있습니다.
 
+![KakaoTalk_20240118_144907899](https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/1d2607c2-1ad6-42f5-af75-276e03f66855)
+
