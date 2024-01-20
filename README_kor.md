@@ -1,4 +1,4 @@
-# AvaloniaUI BottomNavigationBar Project
+# AvaloniaUI AvaloniaNavigationBar Project
 ### Introduction
 이 프로젝트는 AvaloniaUI 프레임워크를 사용하여 사용자 친화적인 AvaloniaNavigationBar를 구현한 예제입니다. AvaloniaUI는 크로스 플랫폼 데스크톱 애플리케이션 개발을 위한 강력하고 유연한 도구입니다. 이 예제에서는 ListBox 컨트롤을 사용하여 하단 내비게이션 바를 만들고, 사용자 인터페이스의 효율성과 접근성을 향상시키는 방법을 보여줍니다.
 
