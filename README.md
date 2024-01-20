@@ -1,6 +1,6 @@
-# AvaloniaUI BottomNavigationBar Project
+# AvaloniaUI AvaloniaNavigationBar Project
 ### Introduction
-This project is an example implementation of a user-friendly BottomNavigationBar using the AvaloniaUI framework. AvaloniaUI is a powerful and flexible tool for cross-platform desktop application development. In this example, we demonstrate how to create a bottom navigation bar using the ListBox control, enhancing the efficiency and accessibility of the user interface.
+This project is an example implementation of a user-friendly AvaloniaNavigationBar using the AvaloniaUI framework. AvaloniaUI is a powerful and flexible tool for cross-platform desktop application development. In this example, we demonstrate how to create a bottom navigation bar using the ListBox control, enhancing the efficiency and accessibility of the user interface.
 
 ### Features
 - **Cross-Platform Compatibility**: Works seamlessly on Windows, Linux, and macOS.
@@ -8,10 +8,10 @@ This project is an example implementation of a user-friendly BottomNavigationBar
 - **Enhanced User Experience**: An intuitive UI improves the usability of the application.
 ### How It's Made
 Implementation Using AvaloniaUI ListBox
-The BottomNavigationBar is based on the ListBox control, enabling efficient display of items and responsiveness to user input. Each item is composed of an icon and text for easy identification and selection by the user.
+The AvaloniaNavigationBar is based on the ListBox control, enabling efficient display of items and responsiveness to user input. Each item is composed of an icon and text for easy identification and selection by the user.
 
 ### Styles and Themes
-Utilizing AvaloniaUI's flexible styling system, the BottomNavigationBar can be customized to meet various visual requirements, maintaining consistency with the overall design of the application.
+Utilizing AvaloniaUI's flexible styling system, the AvaloniaNavigationBar can be customized to meet various visual requirements, maintaining consistency with the overall design of the application.
 
 ### Getting Started
 #### Prerequisites
