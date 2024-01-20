@@ -15,7 +15,7 @@ Utilizing AvaloniaUI's flexible styling system, the BottomNavigationBar can be c
 
 ### Getting Started
 #### Prerequisites
-- AvaloniaUI version 0.x.x or higher
+- AvaloniaUI version 11.0.0 or higher
 - .NET Core 3.1 or higher
 #### Installation and Execution
 1. Clone this repository.
