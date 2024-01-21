@@ -1,18 +1,13 @@
-using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
-using Avalonia.Controls.Templates;
-using Avalonia.Media;
+using Avalonia.Controls.Shapes;
 
-namespace AvaloniaNavigationBar;
+namespace AvaloniaNavigationBar.Style;
 
-public class MagicBar : ListBox
-{ 
-    static MagicBar()
-    {
-    }
-    public MagicBar()
+public class BottomNavigatorBoarStyle2 : ListBox
+{
+    public BottomNavigatorBoarStyle2()
     {
         this.SelectionChanged += (sender, args) =>
         {
@@ -21,12 +16,12 @@ public class MagicBar : ListBox
         };
     }
 
-    private Grid _circle;
+    private Ellipse _circle;
     protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
     {
         base.OnApplyTemplate(e);
 
-        _circle = e.NameScope.Get<Grid>("PART_Circle");
+        _circle = e.NameScope.Get<Ellipse>("PART_Circle");
         this.SelectedIndex = 0;
     }
 }

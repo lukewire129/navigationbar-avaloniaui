@@ -6,6 +6,9 @@
         <entry key="App.axaml" value="AvaloniaNavigationBar.csproj" />
         <entry key="MagicBar.axaml" value="AvaloniaNavigationBar.csproj" />
         <entry key="MainWindow.axaml" value="AvaloniaNavigationBar.csproj" />
+        <entry key="Pages/MagicBarSamplePage.axaml" value="AvaloniaNavigationBar.csproj" />
+        <entry key="Style/BottomNavigatorBoarStyle2.axaml" value="AvaloniaNavigationBar.csproj" />
+        <entry key="Style/MagicBar.axaml" value="AvaloniaNavigationBar.csproj" />
       </map>
     </option>
   </component>

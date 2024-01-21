@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using Material.Icons.Avalonia;
 
 namespace AvaloniaNavigationBar;
 
