@@ -11,5 +11,8 @@
         <TabItem Header="MagicBarSamplePage">
             <pages:MagicBarSamplePage/>
         </TabItem>
+        <TabItem Header="BottomNavigatorBoarStyle2Page">
+            <pages:BottomNavigatorBoarStyle2Page/>
+        </TabItem>
     </TabControl>
 </Window>

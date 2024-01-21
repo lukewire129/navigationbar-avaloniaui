@@ -1,0 +1,45 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:AvaloniaNavigationBar.Style"
+        xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia">
+    <Design.PreviewWith>
+        <controls:BottomNavigatorBarStyle2Item />
+    </Design.PreviewWith>
+
+    <Style Selector="controls|BottomNavigatorBarStyle2Item">
+        <Setter Property="Width" Value="80"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid Background="{TemplateBinding Background}" >
+                    <ContentPresenter/>
+                    <TextBlock x:Name="PART_Name" />
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+        <Style  Selector="^ /template/  TextBlock#PART_Name">
+            <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem},Path=Tag}"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#00000000"/>
+            <Setter Property="Margin" Value="0 60 0 0"/>
+            <Setter Property="Transitions">
+                <Transitions>
+                    <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
+                    <BrushTransition Property="Foreground" Duration="0:0:0.5"/>
+                </Transitions>
+            </Setter>
+        </Style>
+        <Style Selector="^:selected">
+            <Style Selector="^ /template/  Path#PART_Icon">
+                <Setter Property="Fill" Value="#333333"></Setter>
+            </Style>
+            <Style Selector="^ /template/  TextBlock#PART_Name">
+                <Setter Property="Margin" Value="0,45,0,0"/>
+                <Setter Property="Foreground" Value="#333333"></Setter>
+            </Style>
+        </Style>
+    </Style>
+</Styles>

@@ -1,0 +1,35 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:AvaloniaNavigationBar.Style"
+        xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia">
+    
+    <Design.PreviewWith>
+        <controls:BottomNavigatorBarStyle2>
+            <!-- <materialIcons:MaterialIcon Kind="Home"  Height="30" Width="30" Tag="Home"/> -->
+            <!-- <materialIcons:MaterialIcon Kind="Shop"  Height="30" Width="30" Tag="Shop"/> -->
+            <!-- <materialIcons:MaterialIcon Kind="HeartOutline"  Height="30" Width="30" Tag="Wishlist"/> -->
+            <!-- <materialIcons:MaterialIcon Kind="Cart"  Height="30" Width="30" Tag="Cart"/> -->
+            <!-- <materialIcons:MaterialIcon Kind="PersonOutline"  Height="30" Width="30" Tag="Me"/> -->
+        </controls:BottomNavigatorBarStyle2>
+    </Design.PreviewWith>
+
+    <Style Selector="controls|BottomNavigatorBarStyle2">
+        <Setter Property="Width" Value="440"/>
+        <Setter Property="Height" Value="120"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid Background="{TemplateBinding Background}" HorizontalAlignment="Center">
+                    <Ellipse x:Name="PART_Circle"/>
+                    <ItemsPresenter Margin="20 0 20 0"  ItemsPanel="{TemplateBinding ItemsPanel}"/>
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <ItemsPanelTemplate>
+                <StackPanel Orientation="Horizontal"></StackPanel>
+            </ItemsPanelTemplate>
+        </Setter>
+    </Style>
+</Styles>

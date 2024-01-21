@@ -8,6 +8,7 @@
     <Application.Styles>
         <FluentTheme /> 
         <StyleInclude Source="Style/MagicBar.axaml" />
+        <StyleInclude Source="Style/BottomNavigatorBarStyle2.axaml" />
         <materialIcons:MaterialIconStyles />
     </Application.Styles>
 </Application>

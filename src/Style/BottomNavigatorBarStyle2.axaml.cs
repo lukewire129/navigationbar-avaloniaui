@@ -5,9 +5,9 @@ using Avalonia.Controls.Shapes;
 
 namespace AvaloniaNavigationBar.Style;
 
-public class BottomNavigatorBoarStyle2 : ListBox
+public class BottomNavigatorBarStyle2 : ListBox
 {
-    public BottomNavigatorBoarStyle2()
+    public BottomNavigatorBarStyle2()
     {
         this.SelectionChanged += (sender, args) =>
         {
@@ -23,5 +23,10 @@ public class BottomNavigatorBoarStyle2 : ListBox
 
         _circle = e.NameScope.Get<Ellipse>("PART_Circle");
         this.SelectedIndex = 0;
+    }
+
+    protected override Control GetTemplateFocusTarget()
+    {
+        return new BottomNavigatorBarStyle2Item();
     }
 }
