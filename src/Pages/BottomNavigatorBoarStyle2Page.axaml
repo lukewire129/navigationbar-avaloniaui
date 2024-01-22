@@ -7,20 +7,10 @@
              x:Class="AvaloniaNavigationBar.Pages.BottomNavigatorBoarStyle2Page" Background="White"
              xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia">
     <style:BottomNavigatorBarStyle2>
-        <ListBoxItem Tag="Home">
-            <materialIcons:MaterialIcon Kind="Home"/>
-        </ListBoxItem>
-        <ListBoxItem Tag="Shop">
-            <materialIcons:MaterialIcon Kind="Search"/>
-        </ListBoxItem>
-        <ListBoxItem Tag="Wishlist">
-            <materialIcons:MaterialIcon Kind="HeartOutline"/>
-        </ListBoxItem>
-        <ListBoxItem Tag="Cart">
-            <materialIcons:MaterialIcon Kind="Cart"/>
-        </ListBoxItem>
-        <ListBoxItem Tag="Me">
-            <materialIcons:MaterialIcon Kind="PersonOutline"/>
-        </ListBoxItem>
+        <style:BottomNavigatorBarStyle2Item Kind="Home" Tag="Home"/>
+        <style:BottomNavigatorBarStyle2Item Kind="Shop" Tag="Shop"/>
+        <style:BottomNavigatorBarStyle2Item Kind="HeartOutline" Tag="Wishlist"/>
+        <style:BottomNavigatorBarStyle2Item Kind="Cart" Tag="Cart"/>
+        <style:BottomNavigatorBarStyle2Item Kind="PersonOutline" Tag="Me"/>
     </style:BottomNavigatorBarStyle2>
 </UserControl>

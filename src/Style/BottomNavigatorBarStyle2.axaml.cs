@@ -24,9 +24,4 @@ public class BottomNavigatorBarStyle2 : ListBox
         _circle = e.NameScope.Get<Ellipse>("PART_Circle");
         this.SelectedIndex = 0;
     }
-
-    protected override Control GetTemplateFocusTarget()
-    {
-        return new BottomNavigatorBarStyle2Item();
-    }
 }
