@@ -41,3 +41,16 @@ dotnet run
 
 ![KakaoTalk_20240118_144907899](https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/1d2607c2-1ad6-42f5-af75-276e03f66855)
 
+### Collaboration
+이러한 개발 방식이 다른 라이브러리와도 무리 없이 연동될 수 있다는 사실을 발견했습니다.
+이러한 협업의 가능성을 열어주는 이 흥미로운 발전에 대해 더 알아보고 싶다.
+
+
+https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/82ab210f-2ecf-4bf1-8b09-9e5a2b574ee4
+
+
+
+[여기](https://github.com/AvaloniaInside/Shell)
+
+
+
