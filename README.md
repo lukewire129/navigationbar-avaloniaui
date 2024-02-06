@@ -41,6 +41,6 @@ The BottomNavigationBar project now comes in an enhanced version that includes p
 ### Collaboration
 We've found that this approach to development could easily work with other libraries as well, and we're eager to learn more about this exciting development that opens up the possibility of such collaboration.
 
-![Collaboration](https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/8edbce8b-b23c-4937-b9d5-d714879209b3)
+<img width=300px; height=600px; src="https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/8edbce8b-b23c-4937-b9d5-d714879209b3" >
 
 [here](https://github.com/AvaloniaInside/Shell)
