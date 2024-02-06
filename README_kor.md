@@ -46,8 +46,7 @@ dotnet run
 이러한 협업의 가능성을 열어주는 이 흥미로운 발전에 대해 더 알아보고 싶다.
 
 
-https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/82ab210f-2ecf-4bf1-8b09-9e5a2b574ee4
-
+<img width=300px; height=600px; src="https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/8edbce8b-b23c-4937-b9d5-d714879209b3" >
 
 
 [여기](https://github.com/AvaloniaInside/Shell)
