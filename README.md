@@ -1,4 +1,8 @@
 # AvaloniaUI AvaloniaNavigationBar Project
+
+### Motivation
+This NavigationBar was inspired by my friends Vicky and James' WPF NavigationBar. In addition to this, we have long been contributing together to WPF technology research, open-source activities, and activities such as NuGet packages. I would like to express my gratitude to my friends.
+
 ### Introduction
 This project is an example implementation of a user-friendly AvaloniaNavigationBar using the AvaloniaUI framework. AvaloniaUI is a powerful and flexible tool for cross-platform desktop application development. In this example, we demonstrate how to create a bottom navigation bar using the ListBox control, enhancing the efficiency and accessibility of the user interface.
 
