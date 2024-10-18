@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.1.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.4" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.1.4" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.4" />
+    <PackageReference Include="Material.Icons.Avalonia" Version="2.1.10" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Update="Style\MagicBar.axaml.cs">
+      <DependentUpon>MagicBar.axaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="DemoApp\DemoApp\App.axaml" />
+    <UpToDateCheckInput Remove="DemoApp\DemoApp\Views\MainView.axaml" />
+    <UpToDateCheckInput Remove="DemoApp\DemoApp\Views\MainWindow.axaml" />
+  </ItemGroup>
+</Project>

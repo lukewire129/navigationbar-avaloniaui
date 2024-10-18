@@ -4,6 +4,16 @@
     <option name="projectPerEditor">
       <map>
         <entry key="App.axaml" value="AvaloniaNavigationBar.csproj" />
+        <entry key="AvaloniaApplication1/AvaloniaApplication1/Views/MainView.axaml" value="AvaloniaNavigationBar.csproj" />
+        <entry key="AvaloniaNavigationBar/App.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="AvaloniaNavigationBar/MainWindow.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="AvaloniaNavigationBar/Style/BottomNavigatorBarStyle2.axaml" value="DemoApp/DemoApp.Desktop/DemoApp.Desktop.csproj" />
+        <entry key="AvaloniaNavigationBar/Style/BottomNavigatorBarStyle2Item.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/DemoApp/App.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/DemoApp/Views/BottomNavigatorBoarStyle2Page.axaml" value="DemoApp/DemoApp.Desktop/DemoApp.Desktop.csproj" />
+        <entry key="DemoApp/DemoApp/Views/MagicBarSamplePage.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/DemoApp/Views/MainView.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/DemoApp/Views/MainWindow.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="MagicBar.axaml" value="AvaloniaNavigationBar.csproj" />
         <entry key="MainWindow.axaml" value="AvaloniaNavigationBar.csproj" />
         <entry key="Pages/BottomNavigatorBoarStyle2Page.axaml" value="AvaloniaNavigationBar.csproj" />

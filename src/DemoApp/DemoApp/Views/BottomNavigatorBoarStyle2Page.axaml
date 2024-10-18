@@ -1,0 +1,23 @@
+<UserControl
+    Background="White"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="DemoApp.Views.BottomNavigatorBoarStyle2Page"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:style="clr-namespace:AvaloniaNavigationBar.Style;assembly=AvaloniaNavigationBar"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Styles>
+        <StyleInclude Source="avares://AvaloniaNavigationBar/Style/BottomNavigatorBarStyle2Item.axaml" />
+        <StyleInclude Source="avares://AvaloniaNavigationBar/Style/BottomNavigatorBarStyle2.axaml" />
+    </UserControl.Styles>
+    <style:BottomNavigatorBarStyle2>
+        <style:BottomNavigatorBarStyle2Item Kind="Home" Tag="Home" />
+        <style:BottomNavigatorBarStyle2Item Kind="Shop" Tag="Shop" />
+        <style:BottomNavigatorBarStyle2Item Kind="HeartOutline" Tag="Wishlist" />
+        <style:BottomNavigatorBarStyle2Item Kind="Cart" Tag="Cart" />
+        <style:BottomNavigatorBarStyle2Item Kind="PersonOutline" Tag="Me" />
+    </style:BottomNavigatorBarStyle2>
+</UserControl>
