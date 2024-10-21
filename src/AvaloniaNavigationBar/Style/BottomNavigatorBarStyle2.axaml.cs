@@ -1,11 +1,12 @@
-using Avalonia;
+using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Controls.Shapes;
+using AvaloniaNavigationBar.Interface;
 
 namespace AvaloniaNavigationBar.Style;
 
-public class BottomNavigatorBarStyle2 : ListBox
+public class BottomNavigatorBarStyle2 : ListBox,INavigationAdapter
 {
     public BottomNavigatorBarStyle2()
     {
@@ -13,6 +14,7 @@ public class BottomNavigatorBarStyle2 : ListBox
         {
             int idx = SelectedIndex;
             Canvas.SetLeft(_circle, idx * 80);
+            this.ChangedSelectedIndex?.Invoke(idx);
         };
     }
 
@@ -24,4 +26,6 @@ public class BottomNavigatorBarStyle2 : ListBox
         _circle = e.NameScope.Get<Ellipse>("PART_Circle");
         this.SelectedIndex = 0;
     }
+
+    public Action<int> ChangedSelectedIndex { get; set; }
 }

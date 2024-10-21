@@ -1,13 +1,11 @@
-using System.Collections.Generic;
-using Avalonia;
+using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
-using Avalonia.Controls.Templates;
-using Avalonia.Media;
+using AvaloniaNavigationBar.Interface;
 
 namespace AvaloniaNavigationBar.Style;
 
-public class MagicBar : ListBox
+public class MagicBar : ListBox, INavigationAdapter
 { 
     static MagicBar()
     {
@@ -18,6 +16,7 @@ public class MagicBar : ListBox
         {
             int idx = SelectedIndex;
             Canvas.SetLeft(_circle, idx * 80);
+            this.ChangedSelectedIndex?.Invoke(idx);
         };
     }
 
@@ -29,4 +28,6 @@ public class MagicBar : ListBox
         _circle = e.NameScope.Get<Grid>("PART_Circle");
         this.SelectedIndex = 0;
     }
+
+    public Action<int> ChangedSelectedIndex { get; set; }
 }

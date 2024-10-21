@@ -9,6 +9,7 @@
         <entry key="AvaloniaNavigationBar/MainWindow.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="AvaloniaNavigationBar/Style/BottomNavigatorBarStyle2.axaml" value="DemoApp/DemoApp.Desktop/DemoApp.Desktop.csproj" />
         <entry key="AvaloniaNavigationBar/Style/BottomNavigatorBarStyle2Item.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="AvaloniaNavigationBar/Style/MagicBar.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="DemoApp/DemoApp/App.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="DemoApp/DemoApp/Views/BottomNavigatorBoarStyle2Page.axaml" value="DemoApp/DemoApp.Desktop/DemoApp.Desktop.csproj" />
         <entry key="DemoApp/DemoApp/Views/MagicBarSamplePage.axaml" value="DemoApp/DemoApp.Browser/DemoApp.Browser.csproj" />
