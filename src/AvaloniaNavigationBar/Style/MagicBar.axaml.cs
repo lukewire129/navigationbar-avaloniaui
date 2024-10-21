@@ -5,7 +5,7 @@ using AvaloniaNavigationBar.Interface;
 
 namespace AvaloniaNavigationBar.Style;
 
-public class MagicBar : ListBox, INavigationAdapter
+public class MagicBar : Navibar
 { 
     static MagicBar()
     {
@@ -28,6 +28,4 @@ public class MagicBar : ListBox, INavigationAdapter
         _circle = e.NameScope.Get<Grid>("PART_Circle");
         this.SelectedIndex = 0;
     }
-
-    public Action<int> ChangedSelectedIndex { get; set; }
 }
