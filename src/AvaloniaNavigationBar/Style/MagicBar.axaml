@@ -1,6 +1,7 @@
-<Styles xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:controls="using:AvaloniaNavigationBar.Style">
+<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:controls="using:AvaloniaNavigationBar.Style"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Styles.Resources>
         <Geometry x:Key="ArcData">
             M0,0 L100,0 C95.167503,0 91.135628,3.4278221 90.203163,7.9846497 L90.152122,8.2704506 89.963921,9.1416779 C85.813438,27.384438 69.496498,41 50,41 30.5035,41 14.186564,27.384438 10.036079,9.1416779 L9.8478823,8.2704926 9.7968359,7.9846497 C8.8643732,3.4278221 4.8324914,0,0,0 z
@@ -10,126 +11,129 @@
         <Geometry x:Key="Google">M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12C5,7.9 8.2,4.73 12.2,4.73C15.29,4.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2 12.1,2C6.42,2 2.03,6.8 2.03,12C2.03,17.05 6.16,22 12.25,22C17.6,22 21.5,18.33 21.5,12.91C21.5,11.76 21.35,11.1 21.35,11.1V11.1Z</Geometry>
         <Geometry x:Key="Facebook">M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z</Geometry>
         <Geometry x:Key="Instagram">M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z</Geometry>
-        
+
         <ControlTheme TargetType="{x:Type ListBoxItem}" x:Key="MagicBarItem">
-            <Setter Property="Width" Value="80"/>
-            <Setter Property="UseLayoutRounding" Value="True"/>
-            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Width" Value="80" />
+            <Setter Property="UseLayoutRounding" Value="True" />
+            <Setter Property="Background" Value="Transparent" />
             <Setter Property="Template">
                 <ControlTemplate>
-                    <Grid Background="{TemplateBinding Background}" Margin="0,40,0,0" >
+                    <Grid Background="{TemplateBinding Background}" Margin="0,40,0,0">
                         <Viewbox x:Name="PART_IconArea">
-                            <Path x:Name="PART_Icon"/>
+                            <Grid HorizontalAlignment="Center">
+                                <Path HorizontalAlignment="Center" x:Name="PART_Icon" />
+                            </Grid>
                         </Viewbox>
-                        <TextBlock x:Name="PART_Name"/>
+                        <TextBlock x:Name="PART_Name" />
                     </Grid>
                 </ControlTemplate>
             </Setter>
             <Style Selector="^ /template/ Viewbox#PART_IconArea">
-                <Setter Property="Margin" Value="0,0,0,0"></Setter>
-                <Setter Property="Width" Value="40"/>
-                <Setter Property="Height" Value="40"/>
+                <Setter Property="Margin" Value="0,0,0,0" />
+                <Setter Property="Width" Value="40" />
+                <Setter Property="Height" Value="40" />
                 <Setter Property="Transitions">
                     <Transitions>
-                        <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
+                        <ThicknessTransition Duration="0:0:0.5" Property="Margin" />
                     </Transitions>
                 </Setter>
             </Style>
             <Style Selector="^ /template/  Path#PART_Icon">
-                <Setter Property="Data" Value="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem},Path=Tag}"/>
-                <Setter Property="Fill" Value="#44333333"></Setter>
+                <Setter Property="Data" Value="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem}, Path=Tag}" />
+                <Setter Property="Fill" Value="#443333" />
+                <Setter Property="Margin" Value="-1,0,0,0" />
                 <Setter Property="Transitions">
                     <Transitions>
-                        <BrushTransition Property="Fill" Duration="0:0:0.5"/>
+                        <BrushTransition Duration="0:0:0.5" Property="Fill" />
                     </Transitions>
                 </Setter>
             </Style>
-            <Style  Selector="^ /template/  TextBlock#PART_Name">
-                <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem},Path=Content}"/>
-                <Setter Property="HorizontalAlignment" Value="Center"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="FontSize" Value="14"/>
-                <Setter Property="Foreground" Value="#00000000"/>
-                <Setter Property="Margin" Value="0 60 0 0"/>
+            <Style Selector="^ /template/  TextBlock#PART_Name">
+                <Setter Property="Text" Value="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem}, Path=Content}" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="Foreground" Value="#00000000" />
+                <Setter Property="Margin" Value="0 60 0 0" />
                 <Setter Property="Transitions">
                     <Transitions>
-                        <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
-                        <BrushTransition Property="Foreground" Duration="0:0:0.5"/>
+                        <ThicknessTransition Duration="0:0:0.5" Property="Margin" />
+                        <BrushTransition Duration="0:0:0.5" Property="Foreground" />
                     </Transitions>
                 </Setter>
             </Style>
             <Style Selector="^:selected">
                 <Style Selector="^ /template/  Path#PART_Icon">
-                    <Setter Property="Fill" Value="#333333"></Setter>
+                    <Setter Property="Fill" Value="#333333" />
                 </Style>
                 <Style Selector="^ /template/  Viewbox#PART_IconArea">
-                    <Setter Property="Margin" Value="0,-80,0,0"/>
+                    <Setter Property="Margin" Value="0,-80,0,0" />
                 </Style>
                 <Style Selector="^ /template/  TextBlock#PART_Name">
-                    <Setter Property="Margin" Value="0,45,0,0"/>
-                    <Setter Property="Foreground" Value="#333333"></Setter>
+                    <Setter Property="Margin" Value="0,45,0,0" />
+                    <Setter Property="Foreground" Value="#333333" />
                 </Style>
             </Style>
         </ControlTheme>
     </Styles.Resources>
     <Design.PreviewWith>
-        <controls:MagicBar>
-            <ListBoxItem Content="Microsoft" Tag="{StaticResource Microsoft}"/>
-            <ListBoxItem Content="Apple" Tag="{StaticResource Apple}"/>
-            <ListBoxItem Content="Google" Tag="{StaticResource Google}"/>
-            <ListBoxItem Content="Facebook" Tag="{StaticResource Facebook}"/>
-            <ListBoxItem Content="Instagram" Tag="{StaticResource Instagram}"/>
-        </controls:MagicBar>
+        <Grid Background="White">
+            <controls:MagicBar Background="White" Margin="10">
+                <ListBoxItem Content="Microsoft" Tag="{StaticResource Microsoft}" />
+                <ListBoxItem Content="Apple" Tag="{StaticResource Apple}" />
+                <ListBoxItem Content="Google" Tag="{StaticResource Google}" />
+                <ListBoxItem Content="Facebook" Tag="{StaticResource Facebook}" />
+                <ListBoxItem Content="Instagram" Tag="{StaticResource Instagram}" />
+            </controls:MagicBar>
+        </Grid>
     </Design.PreviewWith>
 
     <Style Selector="controls|MagicBar">
-        <Setter Property="ItemContainerTheme" Value="{StaticResource MagicBarItem}"/>
-        <Setter Property="UseLayoutRounding" Value="True"/>
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Width" Value="440"/>
-        <Setter Property="Height" Value="120"/>
+        <Setter Property="ItemContainerTheme" Value="{StaticResource MagicBarItem}" />
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Width" Value="440" />
+        <Setter Property="Height" Value="120" />
         <Setter Property="Template">
             <ControlTemplate>
-                <Grid Background="{TemplateBinding Background}" HorizontalAlignment="Center">
+                <Grid HorizontalAlignment="Center">
                     <Border x:Name="PART_Bar" />
-                    <Canvas Margin="20 0 20 0">
+                    <Canvas Margin="20,0,20,0">
                         <Grid x:Name="PART_Circle">
-                            <Path x:Name="PART_Arc"/>
-                            <Ellipse Fill="#222222"/>
-                            <Ellipse Fill="CadetBlue" Margin="6"/>
+                            <Path Fill="{TemplateBinding Background}" x:Name="PART_Arc" />
+                            <Ellipse Fill="{TemplateBinding Background}" />
+                            <Ellipse Fill="CadetBlue" Margin="6" />
                         </Grid>
                     </Canvas>
-                    <ItemsPresenter Margin="20 0 20 0"  ItemsPanel="{TemplateBinding ItemsPanel}"/>
+                    <ItemsPresenter ItemsPanel="{TemplateBinding ItemsPanel}" Margin="20,0,20,0" />
                 </Grid>
             </ControlTemplate>
         </Setter>
         <Setter Property="ItemsPanel">
             <ItemsPanelTemplate>
-                <StackPanel Orientation="Horizontal" Spacing="0"></StackPanel>
+                <StackPanel Orientation="Horizontal" Spacing="0" />
             </ItemsPanelTemplate>
         </Setter>
-            
+
         <Style Selector="^ /template/ Path#PART_Arc">
             <Setter Property="Data" Value="{StaticResource ArcData}" />
-            <Setter Property="Width" Value="100"/>
-            <Setter Property="Height" Value="100"/>
-            <Setter Property="Fill" Value="#222222"/>
-            <Setter Property="Margin" Value="-10 90 -10 -1"/>
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="100" />
+            <Setter Property="Margin" Value="-10 90 -10 -1" />
         </Style>
         <Style Selector="^ /template/ Grid#PART_Circle">
-            <Setter Property="Width" Value="80"/>
-            <Setter Property="Height" Value="80"/>
-            <Setter Property="Canvas.Left" Value="-10"/>
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="80" />
+            <Setter Property="Canvas.Left" Value="-10" />
             <Setter Property="Transitions">
                 <Transitions>
-                    <DoubleTransition Property="Canvas.Left" Duration="0:0:0.5"></DoubleTransition>
+                    <DoubleTransition Duration="0:0:0.5" Property="Canvas.Left" />
                 </Transitions>
             </Setter>
         </Style>
         <Style Selector="^ /template/ Border#PART_Bar">
-            <Setter Property="Background" Value="#DDDDDD"/>
-            <Setter Property="Margin" Value="0 40 0 0"/>
-            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Background" Value="#DDDDDD" />
+            <Setter Property="Margin" Value="0 40 0 0" />
+            <Setter Property="CornerRadius" Value="10" />
         </Style>
     </Style>
 </Styles>
