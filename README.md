@@ -40,11 +40,11 @@ This project is open source and welcomes contributions from the community. You c
 ### Enhanced Version with Page Navigation
 The BottomNavigationBar project now comes in an enhanced version that includes page navigation capabilities. This new version is designed to allow users to navigate within the application more efficiently, providing a more intuitive and smoother user experience. For more details about the enhanced project with page navigation features, please see [here](https://github.com/lukewire129/AvaloniaNavigationPage).
 
-![KakaoTalk_20240118_144907899](https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/1d2607c2-1ad6-42f5-af75-276e03f66855)
+![KakaoTalk_20240118_144907899](https://lukewire129.github.io/navigationbar-avaloniaui/54387261/1d2607c2-1ad6-42f5-af75-276e03f66855)
 
 ### Collaboration
 We've found that this approach to development could easily work with other libraries as well, and we're eager to learn more about this exciting development that opens up the possibility of such collaboration.
 
-<img width=300px; height=600px; src="https://github.com/lukewire129/AvaloniaNavigationBar/assets/54387261/8edbce8b-b23c-4937-b9d5-d714879209b3" >
+<img width=300px; height=600px; src="https://lukewire129.github.io/navigationbar-avaloniaui/54387261/8edbce8b-b23c-4937-b9d5-d714879209b3" >
 
 [here](https://github.com/AvaloniaInside/Shell)
